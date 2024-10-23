@@ -44,8 +44,10 @@ function Home() {
       <MoonLoader />
     </div>
   ) : (
+    // bg-gradient-to-r from-blue-900 to-black
+    // bg-gradient-to-r from-blue-800 to-blue-400
     <div className="w-full">
-      <div className="w-[100%] h-[500px] flex justify-center items-center flex-col gap-5 bg-blue-500 ">
+      <div className="w-[100%] h-[500px] flex justify-center items-center flex-col gap-5 bg-gradient-to-r from-blue-700 to-blue-300">
         <div className="w-full flex justify-center">
           <h1 className="w-full flex  text-white text-6xl font-extrabold  animate-bounce container">
             Welcome to our online shop! Here, you will find everything you need.

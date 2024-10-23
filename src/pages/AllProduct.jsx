@@ -58,7 +58,6 @@ function AllProduct() {
     return data.title.toLowerCase().includes(search);
     console.log(data);
   });
-  console.log(filter);
   let catageoryFilter = (catageory) => {
     console.log(catageory);
 
@@ -69,6 +68,9 @@ function AllProduct() {
     });
     setProduct(updateFilter);
   };
+  // console.log(product);
+  // console.log(filter);
+
   return (
     // <h1>All Product</h1>
 
@@ -102,6 +104,8 @@ function AllProduct() {
         <div className="flex gap-2   w-full  flex-col px-2">
           <div className=" w-full flex gap-5">
             <Button
+              data-aos="zoom-in"
+              sx={{ background: "linear-gradient(to right, #3f51b5, #00bcd4)" }}
               onClick={() => {
                 catageoryFilter("mens-shirts");
               }}
@@ -110,6 +114,18 @@ function AllProduct() {
               Mens Shirts
             </Button>
             <Button
+              data-aos="zoom-in"
+              sx={{ background: "linear-gradient(to right, #3f51b5, #00bcd4)" }}
+              onClick={() => {
+                catageoryFilter("mens-paints");
+              }}
+              variant="contained"
+            >
+              Mens Paints
+            </Button>
+            <Button
+              data-aos="zoom-in"
+              sx={{ background: "linear-gradient(to right, #3f51b5, #00bcd4)" }}
               onClick={() => {
                 catageoryFilter("mens-shoes");
               }}
@@ -117,7 +133,10 @@ function AllProduct() {
             >
               Mens Shoes
             </Button>
+
             <Button
+              data-aos="zoom-in"
+              sx={{ background: "linear-gradient(to right, #3f51b5, #00bcd4)" }}
               onClick={() => {
                 catageoryFilter("mens-watches");
               }}
@@ -125,84 +144,39 @@ function AllProduct() {
             >
               Mens Watches
             </Button>
-
             <Button
+              data-aos="zoom-in"
+              sx={{ background: "linear-gradient(to right, #3f51b5, #00bcd4)" }}
               onClick={() => {
-                catageoryFilter("motorcycle");
+                catageoryFilter("mens-bags");
               }}
               variant="contained"
             >
-              MotorCycle
+              Mens Bags
             </Button>
-
             <Button
+              data-aos="zoom-in"
+              sx={{ background: "linear-gradient(to right, #3f51b5, #00bcd4)" }}
               onClick={() => {
-                catageoryFilter("beauty");
+                catageoryFilter("womens-shirts");
               }}
               variant="contained"
             >
-              Beauty
+              Womens Shirts
             </Button>
             <Button
+              data-aos="zoom-in"
+              sx={{ background: "linear-gradient(to right, #3f51b5, #00bcd4)" }}
               onClick={() => {
-                catageoryFilter("furniture");
+                catageoryFilter("womens-paints");
               }}
               variant="contained"
             >
-              Furniture
+              Womens Paints
             </Button>
             <Button
-              onClick={() => {
-                catageoryFilter("groceries");
-              }}
-              variant="contained"
-            >
-              Groceries
-            </Button>
-            <Button
-              onClick={() => {
-                catageoryFilter("laptops");
-              }}
-              variant="contained"
-            >
-              Laptops
-            </Button>
-            <Button
-              // sx={{ width: "40px" }}
-              onClick={() => {
-                catageoryFilter("mobile-accessories");
-              }}
-              variant="contained"
-            >
-              Mobile Accessories
-            </Button>
-          </div>
-          <div className=" w-full flex gap-2">
-            <Button
-              onClick={() => {
-                catageoryFilter("smartphones");
-              }}
-              variant="contained"
-            >
-              Smart Phones
-            </Button>
-            <Button
-              onClick={() => {
-                catageoryFilter("sports-accessories");
-              }}
-              variant="contained"
-            >
-              Sports Accessories
-            </Button>
-            <Button
-              onClick={() => {
-                catageoryFilter("tablets");
-              }}
-              variant="contained"
-            >
-              Tablets
-            </Button>
-            <Button
+              data-aos="zoom-in"
+              sx={{ background: "linear-gradient(to right, #3f51b5, #00bcd4)" }}
               onClick={() => {
                 catageoryFilter("womens-bags");
               }}
@@ -210,8 +184,14 @@ function AllProduct() {
             >
               Womens Bags
             </Button>
+          </div>
+          <div className=" w-full flex gap-2">
             <div className="flex gap-2">
               <Button
+                data-aos="zoom-in"
+                sx={{
+                  background: "linear-gradient(to right, #3f51b5, #00bcd4)",
+                }}
                 onClick={() => {
                   catageoryFilter("womens-dresses");
                 }}
@@ -220,6 +200,10 @@ function AllProduct() {
                 Womens Dresses
               </Button>
               <Button
+                data-aos="zoom-in"
+                sx={{
+                  background: "linear-gradient(to right, #3f51b5, #00bcd4)",
+                }}
                 onClick={() => {
                   catageoryFilter("womens-jewellery");
                 }}
@@ -228,6 +212,10 @@ function AllProduct() {
                 Womens Jewellery
               </Button>
               <Button
+                data-aos="zoom-in"
+                sx={{
+                  background: "linear-gradient(to right, #3f51b5, #00bcd4)",
+                }}
                 onClick={() => {
                   catageoryFilter("womens-shoes");
                 }}
@@ -236,6 +224,10 @@ function AllProduct() {
                 Womens Shoes
               </Button>
               <Button
+                data-aos="zoom-in"
+                sx={{
+                  background: "linear-gradient(to right, #3f51b5, #00bcd4)",
+                }}
                 onClick={() => {
                   catageoryFilter("womens-watches");
                 }}
@@ -243,9 +235,48 @@ function AllProduct() {
               >
                 Womens Watches
               </Button>
+              <Button
+                data-aos="zoom-in"
+                sx={{
+                  background: "linear-gradient(to right, #3f51b5, #00bcd4)",
+                }}
+                onClick={() => {
+                  catageoryFilter("laptops");
+                }}
+                variant="contained"
+              >
+                Laptops
+              </Button>
+              <Button
+                data-aos="zoom-in"
+                sx={{
+                  background: "linear-gradient(to right, #3f51b5, #00bcd4)",
+                }}
+                // sx={{ width: "40px" }}
+                onClick={() => {
+                  catageoryFilter("mobile-accessories");
+                }}
+                variant="contained"
+              >
+                Mobile Accessories
+              </Button>
+              <Button
+                data-aos="zoom-in"
+                sx={{
+                  background: "linear-gradient(to right, #3f51b5, #00bcd4)",
+                }}
+                onClick={() => {
+                  catageoryFilter("smartphones");
+                }}
+                variant="contained"
+              >
+                Smart Phones
+              </Button>
             </div>
           </div>
           <Button
+            data-aos="zoom-in"
+            sx={{ background: "linear-gradient(to right, #3f51b5, #00bcd4)" }}
             onClick={() => {
               setProduct(orignalProduct);
             }}
@@ -255,56 +286,48 @@ function AllProduct() {
           </Button>
         </div>
         <div className="flex flex-wrap gap-3 ml-3 mr-3 ">
-          {/* <div className="w-[230px] h-dvh bg-blue-600 rounded-xl">
-            <h1>Filter By Catageory</h1>
-            <FormControl fullWidth>
-              <InputLabel id="demo-simple-select-label">Age</InputLabel>
-              <Select
-                labelId="demo-simple-select-label"
-                id="demo-simple-select"
-                // value={}
-                label="Age"
-                // onChange={handleChange}
-              >
-                <MenuItem value={10}>Ten</MenuItem>
-                <MenuItem value={20}>Twenty</MenuItem>
-                <MenuItem value={30}>Thirty</MenuItem>
-              </Select>
-            </FormControl>
-          </div> */}
-          {filter.map((product) => (
-            <div
-              data-aos="zoom-in"
-              className="w-[250px] 
+          {product.length !== 0 ? (
+            filter.map((product) => (
+              <div
+                data-aos="zoom-in"
+                className="w-[250px] 
                 bg-[#F1F5F9]   rounded-lg flex flex-col justify-start  gap-5 items-start py-5 
             hover:shadow-2xl shadow-[ #5501b9]"
-              key={product?.id}
-            >
-              <img
-                className="w-full h-[200px] rounded-lg"
-                src={product?.image}
-                alt={product?.title}
-              />
-              <div className="px-2 flex flex-col gap-3 justify-start items-start">
-                <h1 className="text-lg font-bold">{product?.title}</h1>
-                <div className="flex justify-between w-full">
-                  <h3 className=" text-md">{`Price: ${product?.price}`}</h3>
-                  <h3>
-                    <del className="text-red-600  text-md font-bold">5%off</del>
-                  </h3>
+                key={product?.id}
+              >
+                <img
+                  className="w-full h-[200px] rounded-lg"
+                  src={product?.image}
+                  alt={product?.title}
+                />
+                <div className="px-2 flex flex-col gap-3 justify-start items-start">
+                  <h1 className="text-lg font-bold">{product?.title}</h1>
+                  <div className="flex justify-between w-full">
+                    <h3 className=" text-md">{`Price: ${product?.price}`}</h3>
+                    <h3>
+                      <del className="text-red-600  text-md font-bold">
+                        5%off
+                      </del>
+                    </h3>
+                  </div>
+                  <Button
+                    sx={{
+                      // bgcolor: "#5501b9",
+                      background: "linear-gradient(to right, #3f51b5, #00bcd4)",
+                    }}
+                    className="w-48 h-10  text-white  rounded-lg"
+                    variant="contained"
+                  >
+                    <Link to={`${product.id}`}>View Details</Link>
+                  </Button>
                 </div>
-                <Button
-                  // sx={{
-                  //   bgcolor: "#5501b9",
-                  // }}
-                  className="w-48 h-10  text-white  rounded-lg"
-                  variant="contained"
-                >
-                  <Link to={`${product.id}`}>View Details</Link>
-                </Button>
               </div>
+            ))
+          ) : (
+            <div className="w-full h-full flex justify-center items-center my-[200px]">
+              <p className="text-3xl">Product NotFound</p>
             </div>
-          ))}
+          )}
         </div>
       </div>
     )

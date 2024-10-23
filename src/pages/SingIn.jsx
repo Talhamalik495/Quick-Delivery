@@ -270,7 +270,7 @@ function SingIn() {
 
           <div className="p-2 w-full">
             <button
-              className="mx-auto text-white bg-blue-500 border-0 py-2 px-8 focus:outline-none rounded-lg w-full flex justify-center "
+              className="mx-auto text-white bg-gradient-to-r from-indigo-600 to-cyan-400 border-0 py-2 px-8 focus:outline-none rounded-lg w-full flex justify-center "
               onClick={signInHandle}
               disabled={loading}
             >

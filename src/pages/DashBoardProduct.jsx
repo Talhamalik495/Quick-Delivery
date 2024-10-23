@@ -52,23 +52,7 @@ function DashBoardProduct() {
         <MoonLoader />
       </div>
     ) : (
-      <div className="flex gap-5 flex-col  flex-wrap font-medium font-Roboto   ">
-        {/* <div className="relative mb-10   ml-10 mr-10">
-          <ProductInput
-            productTitle={"Search Product..."}
-            value={search}
-            setValue={setSearch}
-            focus={handleFocus}
-            blur={handleBlur}
-          />
-          {focused == false && (
-            <CiSearch className="absolute top-8 left-[90%] text-3xl" />
-          ) ? (
-            <CiSearch className="absolute top-3 left-[97%] text-2xl size-8" />
-          ) : (
-            ""
-          )}
-        </div> */}
+      <div className="flex gap-5 flex-col  flex-wrap font-medium font-Roboto">
         <div className=" w-full flex flex-wrap gap-5 justify-center">
           {product.map((product) => (
             <div
@@ -90,15 +74,6 @@ function DashBoardProduct() {
                     <del className="text-red-600  text-lg font-bold">5%off</del>
                   </h3>
                 </div>
-
-                {/* <button  className="w-48 h-10  bg-blue-500 text-white  border-2  mx-2 rounded-lg">> */}
-                <Button
-                  className="w-48 h-10  text-white  rounded-lg"
-                  variant="contained"
-                >
-                  <Link to={`${product.id}`}>View Details</Link>
-                  {/* </button> */}
-                </Button>
               </div>
             </div>
           ))}

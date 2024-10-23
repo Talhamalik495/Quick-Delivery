@@ -146,6 +146,7 @@ function AddProduct() {
           </Box>
           {/* </div> */}
           <Button
+            sx={{ background: "linear-gradient(to right, #3f51b5, #00bcd4)" }}
             variant="contained"
             className="w-full h-10  rounded-md text-xl text-white"
             type="submit"

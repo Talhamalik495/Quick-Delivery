@@ -5,17 +5,6 @@ const categories = [
     url: "https://dummyjson.com/products/category/beauty",
   },
   {
-    slug: "furniture",
-    name: "Furniture",
-    url: "https://dummyjson.com/products/category/furniture",
-  },
-  {
-    slug: "groceries",
-    name: "Groceries",
-    url: "https://dummyjson.com/products/category/groceries",
-  },
- 
-  {
     slug: "laptops",
     name: "Laptops",
     url: "https://dummyjson.com/products/category/laptops",
@@ -35,38 +24,36 @@ const categories = [
     name: "Mens Watches",
     url: "https://dummyjson.com/products/category/mens-watches",
   },
-  {
-    slug: "mobile-accessories",
-    name: "Mobile Accessories",
-    url: "https://dummyjson.com/products/category/mobile-accessories",
-  },
-  {
-    slug: "motorcycle",
-    name: "Motorcycle",
-    url: "https://dummyjson.com/products/category/motorcycle",
-  },
- 
+
   {
     slug: "smartphones",
     name: "Smartphones",
     url: "https://dummyjson.com/products/category/smartphones",
   },
   {
-    slug: "sports-accessories",
-    name: "Sports Accessories",
-    url: "https://dummyjson.com/products/category/sports-accessories",
-  },
- 
-  {
-    slug: "tablets",
-    name: "Tablets",
+    slug: "womens-shirts",
+    name: "Womens Shirts",
     url: "https://dummyjson.com/products/category/tablets",
   },
 
- 
   {
     slug: "womens-bags",
     name: "Womens Bags",
+    url: "https://dummyjson.com/products/category/womens-bags",
+  },
+  {
+    slug: "mens-paints",
+    name: "Mens Paints",
+    url: "https://dummyjson.com/products/category/womens-bags",
+  },
+  {
+    slug: "womens-paints",
+    name: "Womens Paints",
+    url: "https://dummyjson.com/products/category/womens-bags",
+  },
+  {
+    slug: "mens-bags",
+    name: "Mens Bags",
     url: "https://dummyjson.com/products/category/womens-bags",
   },
   {

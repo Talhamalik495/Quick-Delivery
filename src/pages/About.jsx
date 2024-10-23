@@ -37,7 +37,8 @@ function About() {
         <div
           data-aos="fade-up"
           data-aos-anchor-placement="top-bottom"
-          className="w-[410px] h-52 rounded-md bg-blue-500 text-white flex justify-center items-center gap-2 flex-col p-5"
+          className="w-[410px] h-52 rounded-md bg-gradient-to-r from-blue-700 to-blue-300
+ text-white flex justify-center items-center gap-2 flex-col p-5"
         >
           <svg
             stroke="currentColor"
@@ -60,7 +61,8 @@ function About() {
         <div
           data-aos="fade-up"
           data-aos-anchor-placement="top-bottom"
-          className="w-[410px] h-52 rounded-md bg-blue-500 text-white flex justify-center items-center gap-2 flex-col p-5"
+          className="w-[410px] h-52 rounded-md bg-gradient-to-r from-blue-700 to-blue-300
+ text-white flex justify-center items-center gap-2 flex-col p-5"
         >
           <svg
             stroke="currentColor"
@@ -83,7 +85,8 @@ function About() {
         <div
           data-aos="fade-up"
           data-aos-anchor-placement="top-bottom"
-          className="w-[410px] h-52 rounded-md bg-blue-500 text-white flex justify-center items-center gap-2 flex-col p-5"
+          className="w-[410px] h-52 rounded-md bg-gradient-to-r from-blue-700 to-blue-300
+ text-white flex justify-center items-center gap-2 flex-col p-5"
         >
           <svg
             stroke="currentColor"
@@ -111,7 +114,8 @@ function About() {
         <div className=" w-full flex justify-center items-center gap-5">
           <div
             data-aos="zoom-in-down"
-            className="w-[300px] h-52 rounded-md bg-blue-500 text-white flex justify-center items-center gap-2 flex-col p-5"
+            className="w-[300px] h-52 rounded-md bg-gradient-to-r from-blue-700 to-blue-300
+ text-white flex justify-center items-center gap-2 flex-col p-5"
           >
             <div className="w-20 h-20 bg-white rounded-full"></div>
             <p>Muhammad Talha</p>
@@ -119,7 +123,8 @@ function About() {
           </div>
           <div
             data-aos="zoom-in-down"
-            className="w-[300px] h-52 rounded-md bg-blue-500 text-white flex justify-center items-center gap-2 flex-col p-5"
+            className="w-[300px] h-52 rounded-md bg-gradient-to-r from-blue-700 to-blue-300
+ text-white flex justify-center items-center gap-2 flex-col p-5"
           >
             <div className="w-20 h-20 bg-white rounded-full"></div>
             <p>Muhammad Owais</p>
@@ -127,7 +132,8 @@ function About() {
           </div>
           <div
             data-aos="zoom-in-down"
-            className="w-[300px] h-52 rounded-md bg-blue-500 text-white flex justify-center items-center gap-2 flex-col p-5"
+            className="w-[300px] h-52 rounded-md bg-gradient-to-r from-blue-700 to-blue-300
+ text-white flex justify-center items-center gap-2 flex-col p-5"
           >
             <div className="w-20 h-20 bg-white rounded-full"></div>
             <p>Muhammad Sheroz</p>
@@ -135,7 +141,8 @@ function About() {
           </div>
           <div
             data-aos="zoom-in-down"
-            className="w-[300px] h-52 rounded-md bg-blue-500 text-white flex justify-center items-center gap-2 flex-col p-5"
+            className="w-[300px] h-52 rounded-md bg-gradient-to-r from-blue-700 to-blue-300
+ text-white flex justify-center items-center gap-2 flex-col p-5"
           >
             <div className="w-20 h-20 bg-white rounded-full"></div>
             <p>Muhammad Faizan</p>
@@ -151,7 +158,8 @@ function About() {
           <div
             data-aos="fade-up"
             data-aos-anchor-placement="top-center"
-            className="w-[300px] h-36 rounded-md bg-blue-500 text-white flex justify-center items-center gap-2 flex-col p-8"
+            className="w-[300px] h-36 rounded-md bg-gradient-to-r from-blue-700 to-blue-300
+ text-white flex justify-center items-center gap-2 flex-col p-8"
           >
             <p className="flex justify-center items-center">
               Amazing quality! Fast delivery and great customer service!
@@ -175,7 +183,8 @@ function About() {
           <div
             data-aos="fade-up"
             data-aos-anchor-placement="top-center"
-            className="w-[300px] h-36 rounded-md bg-blue-500 text-white flex justify-center items-center gap-2 flex-col p-7"
+            className="w-[300px] h-36 rounded-md bg-gradient-to-r from-blue-700 to-blue-300
+ text-white flex justify-center items-center gap-2 flex-col p-7"
           >
             <p className="flex justify-center items-center">
               Excellent product! Quick shipping and very satisfied customer!"
@@ -199,7 +208,8 @@ function About() {
           <div
             data-aos="fade-up"
             data-aos-anchor-placement="top-center"
-            className="w-[300px] h-36 rounded-md bg-blue-500 text-white flex justify-center items-center gap-2 flex-col p-7"
+            className="w-[300px] h-36 rounded-md bg-gradient-to-r from-blue-700 to-blue-300
+ text-white flex justify-center items-center gap-2 flex-col p-7"
           >
             <p className="flex justify-center items-center">
               Fantastic product! Prompt delivery and very happy customer!
@@ -223,7 +233,8 @@ function About() {
           <div
             data-aos="fade-up"
             data-aos-anchor-placement="top-center"
-            className="w-[300px] h-36 rounded-md bg-blue-500 text-white flex justify-center items-center gap-2 flex-col p-8"
+            className="w-[300px] h-36 rounded-md bg-gradient-to-r from-blue-700 to-blue-300
+ text-white flex justify-center items-center gap-2 flex-col p-8"
           >
             <p className="flex justify-center items-center">
               Great value! Swift delivery and extremely pleased with purchase!
@@ -247,7 +258,10 @@ function About() {
         </div>
       </div>
       <div>
-        <div className="w-full h-52 bg-blue-500 px-40 rounded-lg flex justify-center items-center flex-col gap-5 text-white">
+        <div
+          className="w-full h-52 bg-gradient-to-r from-blue-700 to-blue-300
+ px-40 rounded-lg flex justify-center items-center flex-col gap-5 text-white"
+        >
           <h1 className="text-2xl">Get Started Shopping!</h1>
           <p>
             Explore our diverse product selection and find exactly what you’re

@@ -9,7 +9,7 @@ import { HiUser } from "react-icons/hi";
 function DashBoard() {
   return (
     <div className=" flex  items-start bg-[#F1F5F9]">
-      <div className="w-[32%] h-dvh bg-blue-500 text-[#FFFFFF] flex flex-col gap-5 pl-2 pr-2  pt-10 rounded-md ml-1 mt-2 ">
+      <div className="w-[32%] h-dvh bg-gradient-to-r from-indigo-600 to-cyan-400 text-[#FFFFFF] flex flex-col gap-5 pl-2 pr-2  pt-10 rounded-md ml-1 mt-2 ">
         <Button
           sx={{
             bgcolor: "white",

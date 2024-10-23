@@ -1,8 +1,29 @@
 import React from "react";
 import ProductInput from "../component/ProductInput";
 import { Button } from "antd";
+import { useNavigate } from "react-router-dom";
+import { toast } from "react-toastify";
 
 function Order() {
+  let Navigate = useNavigate();
+  let orderNow = () => {
+    console.log("order submit");
+
+    toast.success("Order Placed Successfully!");
+    // add to order collection
+    // set loading(true);
+    // await addDoc(collection(db, "orders"), {
+    //   product: cartItem.product.id,
+    //   quantity: cartItem.quantity,
+    //   totalPrice: cartItem.product.price * cartItem.quantity,
+    //   customer: auth.currentUser.uid,
+    //   createdAt: serverTimestamp(),
+    // });
+    // setLoading(false);
+    // setCart([]);
+    // history.push("/order-success");
+    Navigate("/");
+  };
   return (
     // <div></div>
     <div className="w-full h-[900px] flex justify-center items-center py-20 text-2xl flex-col gap-7">
@@ -68,10 +89,11 @@ function Order() {
         </div>
         <div>
           <Button
-            className=" bg-[#5501b9] text-white h-10 w-36"
+            onClick={orderNow}
+            className=" bg-gradient-to-r from-indigo-600 to-cyan-400 border-0 py-2 px-8  text-white h-10 w-36"
             variant="outlined"
           >
-            Click to Order
+            Buy Now
           </Button>
         </div>
       </div>

@@ -1,6 +1,6 @@
 import { collection } from "firebase/firestore";
 import React, { useContext, useEffect, useState } from "react";
-import { useParams } from "react-router-dom";
+import { Navigate, useNavigate, useParams } from "react-router-dom";
 import { db } from "../utils/firbase";
 import { getDocs } from "firebase/firestore";
 import dayjs from "dayjs";
@@ -15,11 +15,14 @@ import {
   TextField,
 } from "@mui/material";
 import { CartContext } from "../context/CartContext";
+import { context } from "../context/AuthContext";
 
 function ProductDeatail() {
   let param = useParams();
   let [productDetail, setProductDetail] = useState([]);
   let { cartItem, addToCart, isItemAdded } = useContext(CartContext);
+  let { user, setUser } = useContext(context);
+  let Navigate = useNavigate();
   console.log(cartItem);
 
   let [loading, setLoading] = useState(false);
@@ -135,7 +138,9 @@ function ProductDeatail() {
                 </DialogActions>
               </Dialog>
               <Button
-                onClick={() => addToCart(data)}
+                onClick={() => {
+                  user.isLogin ? addToCart(data) : Navigate("/singup");
+                }}
                 variant="contained"
                 // sx={{ bgcolor: "#5501b9" }}
               >

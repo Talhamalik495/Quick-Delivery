@@ -33,7 +33,7 @@ function Header() {
   let [show, setShow] = useState(false);
   let { cartItem } = useContext(CartContext);
   let { theme, togleMode } = useContext(themContextCreate);
-  console.log(theme, togleMode);
+  console.log(user);
 
   return (
     <header className="bg-white shadow-lg font-Lato text-gray-600 body-font h-20">
@@ -68,13 +68,13 @@ function Header() {
             <div>
               <Link
                 to={"/singup"}
-                className="font-Roboto text-black text-[15px] py-2"
+                className="font-Roboto text-black text-[18px] py-2 mr-5"
               >
                 Singup
               </Link>
 
               <Link
-                className="font-Roboto text-black text-[17px] py-2"
+                className="font-Roboto text-black text-[18px] py-2 mr-5"
                 to={"/singin"}
               >
                 Sigin
@@ -86,22 +86,27 @@ function Header() {
               <AiOutlineShoppingCart className="w-8 h-8 text-black" />
             </Badge>
           </Link>
-          {user.email == "TalhaMalik@gmail.com" ? (
+          {user.rolle === "admin" ? (
             <Link className="font-Roboto mx-5" to={"/dashboard"}>
-              <Button variant="contained" sx={{ bgcolor: "#FBBF24" }}>
+              <Button
+                variant="contained"
+                sx={{
+                  background: "linear-gradient(to right, #3f51b5, #00bcd4)",
+                }}
+              >
                 Dashboard
               </Button>
             </Link>
           ) : (
             ""
           )}
-          <button className="ml-3 mb-2" onClick={() => togleMode()}>
+          {/* <button className="ml-3 mb-2" onClick={() => togleMode()}>
             {theme == "light" ? (
               <CiDark className="size-7" />
             ) : (
               <CiLight className="size-7" />
             )}
-          </button>
+          </button> */}
         </nav>
       </div>
     </header>
