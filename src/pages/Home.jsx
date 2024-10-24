@@ -67,7 +67,7 @@ function Home() {
         </Link>
       </div>
 
-      <div className="w-full flex flex-wrap  justify-center px-3 gap-5 py-5 mb-5">
+      <div className="w-full flex flex-wrap  px-3 gap-3 py-5 mb-5">
         {threeItems.map((item) => (
           <div
             data-aos="zoom-in"

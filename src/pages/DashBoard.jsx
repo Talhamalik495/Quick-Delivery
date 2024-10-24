@@ -13,21 +13,6 @@ function DashBoard() {
         <Button
           sx={{
             bgcolor: "white",
-            gap: "9px",
-            display: "flex",
-            justifyContent: "center",
-            alignItems: "center",
-          }}
-          variant="contained"
-          startIcon={<MdHomeFilled className="text-blue-500 size-5" />}
-        >
-          <Link className="text-blue-500" to={"/dashboard/dashboards"}>
-            Dashboard Control
-          </Link>
-        </Button>
-        <Button
-          sx={{
-            bgcolor: "white",
             gap: "5px",
             display: "flex",
             justifyContent: "center",

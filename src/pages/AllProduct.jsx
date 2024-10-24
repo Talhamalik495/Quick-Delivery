@@ -286,6 +286,12 @@ function AllProduct() {
           </Button>
         </div>
         <div className="flex flex-wrap gap-3 ml-3 mr-3 ">
+          <div className="w-64 min-h-80 bg-white border-2 border-black px-3 py-5">
+            <input
+              type="text"
+              className="border-2 border-black w-full h-12 rounded-md"
+            />
+          </div>
           {product.length !== 0 ? (
             filter.map((product) => (
               <div

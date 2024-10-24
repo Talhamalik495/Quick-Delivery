@@ -55,7 +55,7 @@ function DashBoardProduct() {
       </div>
     ) : (
       <div className="flex gap-5 flex-col  flex-wrap font-medium font-Roboto">
-        <div className=" w-full flex flex-wrap gap-5 justify-center">
+        <div className=" w-full flex flex-wrap gap-5">
           {product.map((product) => (
             <div
               data-aos="zoom-in"

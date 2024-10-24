@@ -71,6 +71,7 @@ function ProductDeatail() {
     </div>
   ) : (
     <div className="w-full my-10 flex justify-center items-center flex-col gap-10">
+     
       {productDetail?.map((data) => {
         return (
           <div
@@ -89,6 +90,7 @@ function ProductDeatail() {
               <h1>{`Name: ${data?.title}`}</h1>
               <h1>{`Price: ${data?.price}`}</h1>
               <h1>{`Catageory: ${data?.catageory}`}</h1>
+              <h1>{`Brand: ${data?.brand}`}</h1>
               <h1>{`Location: ${data?.location}`}</h1>
               <h1>{`CreatedAt: ${dayjs().to(data?.createdAt.toDate())}`}</h1>
               <h1>{`Description: ${data?.description}`}</h1>

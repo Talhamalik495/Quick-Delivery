@@ -1,11 +1,5 @@
 // import { BrowserRouter, Routes, Route } from'react-router-dom'
-import {
-  BrowserRouter,
-  Routes,
-  Route,
-  Navigate,
- 
-} from "react-router-dom";
+import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
 
 import { useContext, useEffect, useState } from "react";
 import reactLogo from "./assets/react.svg";
@@ -61,7 +55,7 @@ function App() {
         </Route>
         <Route path="/addproduct" element={<AddProduct />} />
         <Route path="/dashboard" element={<DashBoard />}>
-          <Route path="dashboards" element={<Dasboards />} />
+          <Route index element={<Dasboards />} />
           <Route path="addproduct" element={<AddProduct />} />
           <Route path="dashboardproduct" element={<DashBoardProduct />} />
           <Route path="dashboardproduct/:id" element={<ProductDeatail />} />

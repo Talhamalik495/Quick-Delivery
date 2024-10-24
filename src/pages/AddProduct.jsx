@@ -36,8 +36,10 @@ function AddProduct() {
   let [image, setImage] = useState("");
   let [location, setLocation] = useState("");
   let [catageory, setCatageory] = useState("");
+  let [brand, setBrand] = useState("");
   let navigate = useNavigate();
-  let handleAddProduct = async () => {
+  let handleAddProduct = async (e) => {
+    e.preventDefault();
     setLoading(true);
     let docRef = collection(db, "products");
     console.log(docRef);
@@ -104,6 +106,12 @@ function AddProduct() {
             type={"text"}
             value={location}
             setValue={setLocation}
+          />
+          <ProductInput
+            productTitle={"Product Brand"}
+            type={"text"}
+            value={brand}
+            setValue={setBrand}
           />
           {/* <div>
               <select
