@@ -8,6 +8,7 @@ import { MoonLoader } from "react-spinners";
 import ProductInput from "../component/ProductInput";
 import { CiSearch } from "react-icons/ci";
 import { Button } from "@mui/material";
+import { toast } from "react-toastify";
 dayjs.extend(relativeTime);
 
 function DashBoardProduct() {
@@ -32,6 +33,7 @@ function DashBoardProduct() {
         setLoading(false);
       } catch (error) {
         console.log(error);
+        toast.error(error.message);
         setLoading(false);
       }
     };

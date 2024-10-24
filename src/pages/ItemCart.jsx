@@ -1,5 +1,4 @@
 import { Button } from "antd";
-import axios from "axios";
 import React, { useContext, useEffect, useState } from "react";
 import { Link, useParams } from "react-router-dom";
 import { toast } from "react-toastify";

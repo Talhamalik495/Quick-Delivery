@@ -13,23 +13,28 @@ function AuthContext({ children }) {
     userInfo: {},
   });
   let [loading, setLoading] = useState(true);
-
+  //
   let stateChanged = async (users) => {
-    if (users) {
-      let docRef = doc(db, "users", users.uid);
-      let userInfo = await getDoc(docRef);
-      console.log(user);
-      setUser({
-        isLogin: true,
-        ...userInfo?.data(),
-      });
+    try {
+      if (users) {
+        let docRef = doc(db, "users", users.uid);
+        let userInfo = await getDoc(docRef);
+        setUser({
+          isLogin: true,
+          ...userInfo?.data(),
+        });
+        setLoading(false);
+      } else {
+        setLoading(false);
+        setUser({
+          isLogin: false,
+          userInfo: {},
+        });
+      }
+    } catch (error) {
+      console.log(error.message);
+    } finally {
       setLoading(false);
-    } else {
-      setLoading(false);
-      setUser({
-        isLogin: false,
-        userInfo: {},
-      });
     }
   };
   useEffect(() => {

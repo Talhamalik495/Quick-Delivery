@@ -37,7 +37,7 @@ function AllProduct() {
           id: doc.id,
           ...doc.data(),
         }));
-
+        console.log(productList);
         setProduct(productList);
         setOrignalProduct(productList);
         setLoading(false);
