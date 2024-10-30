@@ -9,6 +9,19 @@ import { MoonLoader } from "react-spinners";
 import ProductInput from "../component/ProductInput";
 import { CiSearch } from "react-icons/ci";
 import { Button } from "@mui/material";
+import { Swiper, SwiperSlide } from "swiper/react";
+import "swiper/css";
+import "swiper/css/navigation";
+import "swiper/css/pagination";
+import "swiper/css/scrollbar";
+import "swiper/css";
+import { Navigation, Pagination, Scrollbar, A11y } from "swiper/modules";
+import firstimage1 from "../assets/firstimage1.jpeg";
+import firstimage from "../assets/firstimage.webp";
+import second from "../assets/second.jpg";
+import thard from "../assets/thard.jpg";
+import four from "../assets/four.jpg";
+import quickdelivery from "../assets/quickdeliverylogo.png";
 
 function Home() {
   let [threeItems, setThreeItmes] = useState([]);
@@ -44,29 +57,54 @@ function Home() {
     </div>
   ) : (
     <div className="w-full">
-      <div className="w-[100%] h-[500px] flex justify-center items-center flex-col gap-5 bg-gradient-to-r from-blue-700 to-blue-300">
-        <div className="w-full flex justify-center">
-          <h1 className="w-full flex  text-white text-center text-5xl font-extrabold  animate-bounce container">
-            Welcome to our online shop! Here, you will find everything you need.
-          </h1>
-        </div>
-        <p className="text-2xl text-white">All Your Essentials, In One Place</p>
-        <Link to={"/products"}>
-          <Button
+      <div className="w-[100%] h-[500px] ">
+        <Swiper
+          modules={[Navigation, Pagination, Scrollbar, A11y]}
+          // modules={[Navigation, Pagination]}
+          spaceBetween={20}
+          slidesPerView={1}
+          navigation
+          pagination={{ clickable: true }}
+          className="mySwiper w-[100%] h-[500px]"
+        >
+          <SwiperSlide
             style={{
-              backgroundColor: "white",
-              color: " rgb(59, 130, 246)",
-              width: "150px",
-              height: "50px",
-              fontWeight: "bold",
+              backgroundImage: `url(${firstimage1})`,
+              backgroundRepeat: "no-repeat",
+              backgroundSize: "cover",
             }}
-            variant="contained"
           >
-            Shop Now
-          </Button>
-        </Link>
+            {/* <img className="w-[100%] h-[500px] " src={firstimage1} alt="" /> */}
+          </SwiperSlide>
+          <SwiperSlide
+            style={{
+              backgroundImage: `url(${second})`,
+              backgroundRepeat: "no-repeat",
+              backgroundSize: "cover",
+            }}
+          >
+            {/* <img className="w-[100%] h-[500px] " src={second} alt="" /> */}
+          </SwiperSlide>
+          <SwiperSlide
+            style={{
+              backgroundImage: `url(${thard})`,
+              backgroundRepeat: "no-repeat",
+              backgroundSize: "cover",
+            }}
+          >
+            {/* <img className="w-[100%] h-[500px] " src={thard} alt="" /> */}
+          </SwiperSlide>
+          <SwiperSlide
+            style={{
+              backgroundImage: `url(${four})`,
+              backgroundRepeat: "no-repeat",
+              backgroundSize: "cover",
+            }}
+          >
+            {/* <img className="w-[100%] h-[500px] " src={four} alt="four" /> */}
+          </SwiperSlide>
+        </Swiper>
       </div>
-
       <div className="w-full flex flex-wrap  px-3 gap-3 py-5 mb-5">
         {threeItems.map((item) => (
           <div
