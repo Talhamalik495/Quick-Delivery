@@ -74,7 +74,7 @@ function Home() {
               backgroundSize: "cover",
             }}
           >
-            {/* <img className="w-[100%] h-[500px] " src={firstimage1} alt="" /> */}
+           
           </SwiperSlide>
           <SwiperSlide
             style={{
@@ -83,7 +83,6 @@ function Home() {
               backgroundSize: "cover",
             }}
           >
-            {/* <img className="w-[100%] h-[500px] " src={second} alt="" /> */}
           </SwiperSlide>
           <SwiperSlide
             style={{
